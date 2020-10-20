@@ -1,0 +1,15 @@
+version: '3.2'
+
+services:
+  s3bench:
+    image: shonpaz123/s3bench
+    command: --endpoint-url http://{{ cephAddress }}:{{ cephPort }}
+             --access-key {{ accessKey }}
+             --secret-key {{ secretKey }}
+             --bucket {{bucketName}}
+             --object-size {{ size }}
+             --prefix {{ size }}
+             --num-objects {{ numObjects }}
+             --workload {{ workload }}
+             --cleanup no
+             --elastic-url http://{{ elasticAddress }}:{{ elasticPort }}

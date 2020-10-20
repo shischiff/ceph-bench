@@ -1,0 +1,5 @@
+---
+# vars file for bench
+size: "64KiB"
+workload: "write"
+numObjects: 200

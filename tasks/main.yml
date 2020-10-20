@@ -1,0 +1,4 @@
+---
+# tasks file for bench
+- name: s3bench | bench
+  include: bench.yml

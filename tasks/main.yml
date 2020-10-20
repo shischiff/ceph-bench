@@ -1,4 +1,10 @@
 ---
 # tasks file for bench
+- name: s3bench | deploy
+  include: deploy.yml
+  tags: 
+    - deploy
 - name: s3bench | bench
   include: bench.yml
+  tags:
+    - bench

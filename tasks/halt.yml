@@ -1,0 +1,5 @@
+---
+- name: deploy | stop docker service
+  service:
+    name: docker
+    state: stopped

@@ -4,7 +4,7 @@ cephAddress: 192.168.43.27
 cephPort: 8000
 elasticAddress: 127.0.0.1
 elasticPort: 9200
-accessKey: "5P2K529LKB6YHPO062GU"
-secretKey: "RpdGj0k4R1csevdp9dsmRkkF286ArpUIBsav0Scn"
+accessKey: "change.me"
+secretKey: "change.me"
 bucketName: "my-buc"
 unsecureDockerReg: "myUnsecureDockerReg:5000"

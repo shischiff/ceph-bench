@@ -2,8 +2,10 @@
 - name: bench | Copy docker-compose file
   template:
     src: "docker-compose.yml.j2"
-    dest: "/tmp/docker-compose.j2"
+    dest: "/tmp/docker-compose.yml"
     mode: "0755"
 - name: bench | Bring up S3bench containers
   docker_compose:
     project_src: /tmp/
+    scale:
+      s3bench: "{{ scale }}"

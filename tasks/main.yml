@@ -8,3 +8,7 @@
   include: bench.yml
   tags:
     - bench
+- name: s3bench | halt
+  include: halt.yml
+  tags:
+    - halt

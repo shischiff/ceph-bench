@@ -3,12 +3,16 @@
   package:
     name: docker-compose
     state: present
-- name: deploy | enable private registry 
+- name: deploy | install docker
+  package:
+    name: docker
+    state: present
+- name: deploy | enable private registry
   template:
     src: "docker.json.j2"
     dest: "/etc/docker.json"
     mode: "0755"
 - name: deploy | restart docker service
   service:
-    name: httpd
+    name: docker
     state: reloaded

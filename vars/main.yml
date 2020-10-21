@@ -3,3 +3,4 @@
 size: "64KiB"
 workload: "write"
 numObjects: 200
+scale: 8

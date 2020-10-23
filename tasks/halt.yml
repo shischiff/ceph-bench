@@ -1,5 +1,5 @@
 ---
-- name: deploy | stop docker service
+- name: halt | stop docker service
   service:
     name: docker
     state: stopped

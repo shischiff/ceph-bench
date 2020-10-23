@@ -9,8 +9,8 @@
     state: present
 - name: deploy | enable private registry
   template:
-    src: "docker.json.j2"
-    dest: "/etc/docker.json"
+    src: "daemon.json.j2"
+    dest: "/etc/docker/daemon.json"
     mode: "0755"
 - name: deploy | restart docker service
   service:

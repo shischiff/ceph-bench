@@ -1,2 +1,4 @@
-[all]
-192.168.46.10
+[workers]
+worker1
+worker2
+worker3
